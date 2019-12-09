@@ -50,7 +50,7 @@ int nP = 0;
             throw new TakeAwayBillException();
         }
        
-        //Se l’importo totale è inferiore a 10 € viene aggiunta una commissione di 0,50 €
+        //Se l’importo totale è inferiore a 10 € viene aggiunta una commissione di 0,50 €.
         if (count < 10 && count > 0) {
             count =count + 0.5;
         }
