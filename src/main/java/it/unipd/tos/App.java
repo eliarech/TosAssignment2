@@ -34,7 +34,7 @@ int nP = 0;
             }
         }
 
-        //caso 2
+        // Sconto 50 % panino , con ordine sopra a 5 panini
         if (nP > 5) {
             count -= minP;
             count += minP * 0.5;
