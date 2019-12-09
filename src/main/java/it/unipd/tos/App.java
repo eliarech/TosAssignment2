@@ -40,7 +40,7 @@ int nP = 0;
             count += minP * 0.5;
         }
         
-        //Se l’importo totale delle ordinazioni (Panini e Fritti) supera i 50 euro viene fatto il 10% di sconto;
+        //Se l’importo totale delle ordinazioni (Panini e Fritti) supera i 50 euro viene fatto il 10% di sconto
         if (totalepf > 50) {
             count = count*0.9;
         }
