@@ -18,7 +18,7 @@ double minP = Double.MAX_VALUE;
 int nP = 0;
         //NUMERO TOTALE PANINO E FRITTO
         double totalepf=0;
-        //caso 1
+        //Calcolo totale
         for (int i =0;i < items_ordered.size(); i++) {
             count += items_ordered.get(i).getPrice();
 
@@ -40,17 +40,17 @@ int nP = 0;
             count += minP * 0.5;
         }
         
-        //Se l’importo totale delle ordinazioni (Panini e Fritti) supera i 50 euro viene fatto il 10% di sconto;
+        //Se lâ€™importo totale delle ordinazioni (Panini e Fritti) supera i 50 euro viene fatto il 10% di sconto;
         if (totalepf > 50) {
             count = count*0.9;
         }
         
-        //Il caso per  un’ordinazione con più di 30 elementi (se accade prevedere un messaggio d’errore);
+        //Il caso per  unâ€™ordinazione con piÃ¹ di 30 elementi (se accade prevedere un messaggio dâ€™errore);
         if (items_ordered.size() > 30) {
             throw new TakeAwayBillException();
         }
        
-        //Se l’importo totale è inferiore a 10 € viene aggiunta una commissione di 0,50 €
+        //Se lâ€™importo totale Ã¨ inferiore a 10 â‚¬ viene aggiunta una commissione di 0,50 â‚¬
         if (count < 10 && count > 0) {
             count =count + 0.5;
         }
