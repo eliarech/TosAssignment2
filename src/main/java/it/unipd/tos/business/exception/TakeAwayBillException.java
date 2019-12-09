@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////
+// Elia Rech 1123583
+////////////////////////////////////////////////////////////////////
+package it.unipd.tos.business.exception;
+
+public class TakeAwayBillException extends Exception{
+
+    public TakeAwayBillException(){
+        super("Troppi ordini ordinati");
+    }
+}

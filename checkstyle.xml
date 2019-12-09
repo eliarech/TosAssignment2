@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+        "https://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+
+  <property name="fileExtensions" value="java" />
+
+  <module name="TreeWalker">
+    <module name="BooleanExpressionComplexity">
+      <property name="max" value="8"/>
+      <property name="tokens" value="BXOR,LAND,LOR"/>
+    </module>
+    <module name="CyclomaticComplexity">
+      <property name="max" value="15"/>
+    </module>
+    <module name="LineLength">
+      <property name="max" value="140"/>
+    </module>
+    <module name="MethodLength">
+      <property name="tokens" value="METHOD_DEF"/>
+      <property name="max" value="100"/>
+      <property name="countEmpty" value="false"/>
+    </module>
+    <module name="EmptyCatchBlock">
+      <property name="exceptionVariableName" value="TakeAwayBillException"/>
+      <property name="commentFormat" value="TakeAwayBill not valid"/>
+    </module>
+    <module name="AvoidStarImport">
+      <property name="excludes" value="java.io"/>
+      <property name="allowClassImports" value="false"/>
+    </module>
+    <module name="IllegalImport">
+      <property name="illegalPkgs" value="java.io, java.sql"/>
+    </module>
+    <module name="NeedBraces">
+      <property name="allowSingleLineStatement" value="false"/>
+    </module>
+  </module>
+
+  <module name="FileLength">
+    <property name="max" value="1500"/>
+  </module>
+  <module name="FileTabCharacter"/>
+  <module name="Header">
+    <property name="header" value="////////////////////////////////////////////////////////////////////\n// Elia Rech 1123583\n////////////////////////////////////////////////////////////////////"/>
+    <property name="fileExtensions" value="java"/>
+  </module>
+    
+  
+</module>
