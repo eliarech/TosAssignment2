@@ -45,7 +45,7 @@ int nP = 0;
             count = count*0.9;
         }
         
-        //Il caso per  un’ordinazione con più di 30 elementi (se accade prevedere un messaggio d’errore);
+        //Il caso per  un’ordinazione con più di 30 elementi (se accade prevedere un messaggio d’errore)
         if (items_ordered.size() > 30) {
             throw new TakeAwayBillException();
         }
